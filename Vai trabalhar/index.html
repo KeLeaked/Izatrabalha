@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iza. Não vai trabalhar?</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffffff, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #111827;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      animation: float 2s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .gif-canto {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      width: 320px;
+      height: auto;
+      z-index: 1000;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Não vai trabalhar?</h1>
+
+  <!-- GIF no canto da tela -->
+  <img class="gif-canto" src="image/flork-italian.gif" alt="gif engraçado">
+
+</body>
+</html>
